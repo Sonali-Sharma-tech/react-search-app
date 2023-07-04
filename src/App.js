@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { SearchComponent } from './components/SearchComponent';
 
 function App() {
+  const nameList = [
+    "Brennen England",
+    "Dion Welker",
+    "Debra Santana",
+    "Irene Shelley",
+    "Markus Lassiter",
+    "Anders Moon",
+    "Tyson Roche",
+    "Kelsy Nance",
+    "Dangelo Reeder",
+    "Aniyah Bach"
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SearchComponent names={nameList} />
   );
 }
 
